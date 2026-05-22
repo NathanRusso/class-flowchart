@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1 class="center"> Computer Science BS/MS Flowchart</h1>
+    <button type="button" onclick="addYear()">Add Year!</button>
+    <button type="button" onclick="removeYear()">Remove Year!</button>
 
     <div id="year-1">
         <div id="fall-1" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
@@ -35,42 +37,10 @@
         </div>
         <div id="summer-1" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
     </div>
-    <div class="year-divider"></div>
 
-    <div id="year-2">
-        <div id="fall-2" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="spring-2" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="summer-2" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-    </div>
-    <div class="year-divider"></div>
 
-    <div id="year-3">
-        <div id="fall-3" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="spring-3" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="summer-3" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-    </div>
-    <div class="year-divider"></div>
 
-    <div id="year-4">
-        <div id="fall-4" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="spring-4" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="summer-4" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-    </div>
-    <div class="year-divider"></div>
-
-    <div id="year-5">
-        <div id="fall-5" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="spring-5" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="summer-5" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-    </div>
-    <div class="year-divider"></div>
-
-    <div id="year-6">
-        <div id="fall-6" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="spring-6" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-        <div id="summer-6" class="semester" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-    </div>
-
+    <script src="/js/add.js"></script>
     <script src="/js/dragdrop.js"></script>
 </body>
 </html>
