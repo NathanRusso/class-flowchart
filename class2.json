@@ -1,12 +1,10 @@
 {
     "id": 1,
-    "credits": 3,
     "discipline": "CSCI",
     "number": 141,
     "name": "Computer Science I",
     "description": "This is the 1st CS class",
     "notes": "",
-    "writing_intensive": false,
-    "perspectives": ["Artistic, Social"],
+    "credits": 3,
     "prerequisites": []
 }
