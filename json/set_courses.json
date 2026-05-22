@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "credits": 3,
+        "discipline": "CSCI",
+        "number": 141,
+        "name": "Computer Science I",
+        "description": "This is the 1st CS class",
+        "notes": "",
+        "co-op": false,
+        "attributes": [],
+        "prerequisites": []
+    },
+    {
+        "id": 2,
+        "credits": null,
+        "co-op": true,
+        "discipline": "CSCI",
+        "number": 488,
+        "name": "Summer Co-op",
+        "description": "This is a summer co-op",
+        "notes": "",
+        "attributes": [],
+        "prerequisites": []
+    }
+]

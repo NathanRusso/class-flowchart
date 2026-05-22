@@ -1,12 +1,21 @@
+course_types = [
+    "set_course",   // A predefined course in the RIT system
+    "open_course"   // A selectable course to fulfil a requirement
+]
+
+// I added the "General Education: Immersion", "Lab Science: Lab", and "Lab Science: Lecture" attributes
+// No attributes is an open elective
+
 const body = document.body;
 let currentAcademicYear = 1; // The numbers of years of school currently being listed.
+const semesters = ["fall", "spring", "summer"];
 
-const fall_1 = document.getElementById(`fall-${currentAcademicYear}`);
+/*const fall_1 = document.getElementById(`fall-${currentAcademicYear}`);
 const spring_1 = document.getElementById(`spring-${currentAcademicYear}`);
 const summer_1 = document.getElementById(`summer-${currentAcademicYear}`);
 makeSortable(fall_1);
 makeSortable(spring_1);
-makeSortable(summer_1);
+makeSortable(summer_1);*/
 
 /**
  * This makes the given div element sortable.
@@ -31,6 +40,84 @@ function makeSortable(element) {
         }
     });
 }
+
+async function uploadTemplate() {
+    const template  = (await import("/json/template.json", { with: { type: "json" } })).default;
+    console.log(template);
+    template.forEach((yearInfo, index) => createYear(yearInfo, index + 1));
+}
+
+function createYear(yearInfo, academicYearCount) {
+    console.log(yearInfo, academicYearCount);
+
+    if (academicYearCount != 1) {
+        const yearDividerDiv = document.createElement("div");
+        yearDividerDiv.id = `year-divider-${academicYearCount}`
+        yearDividerDiv.className = "year-divider";
+        body.appendChild(yearDividerDiv);
+    }
+
+    const yearDiv = document.createElement("div");
+    yearDiv.id = `year-${academicYearCount}`
+    yearInfo.forEach((semesterInfo, index) => {
+        const semesterDiv = createSemester(semesterInfo, academicYearCount, semesters[index])
+        yearDiv.appendChild(semesterDiv);
+    });
+    body.appendChild(yearDiv);
+}
+
+function createSemester(semesterInfo, academicYearCount, term) {
+    console.log(semesterInfo);
+    const semesterDiv = document.createElement("div");
+    semesterDiv.id = `${term}-${academicYearCount}`;
+    semesterDiv.className = "semester";
+    makeSortable(semesterDiv);
+
+    semesterInfo.forEach(courseInfo => {
+        const courseDiv = createCourse(courseInfo);
+        semesterDiv.appendChild(courseDiv);
+    });
+    return semesterDiv;
+}
+
+function createCourse(courseInfo) {
+    console.log(courseInfo);
+    const courseDiv = document.createElement("div");
+    // courseDiv.id = `c10`
+    if (courseInfo["co-op"]) {
+        courseDiv.className = "co-op";
+        courseDiv.textContent = `${courseInfo.name} (${courseInfo.discipline}-${courseInfo.number})`
+    } else if (courseInfo.set_course) {
+        courseDiv.className = "class";
+        courseDiv.textContent = `${courseInfo.discipline}-${courseInfo.number}\n\n${courseInfo.name}`
+        switch (courseInfo.discipline) {
+            case "CSCI":
+                courseDiv.style.borderColor = "Orange";
+                break;
+            case "MATH":
+                courseDiv.style.borderColor = "Blue";
+                break;
+            case "YOPS":
+                courseDiv.style.borderColor = "OrangeRed";
+                break;
+        }
+    } else {
+        courseDiv.className = "class";
+        courseDiv.textContent = `${courseInfo.attribute}`
+        const attribute = courseInfo.attribute;
+        if (attribute == null || attribute == "") {
+            courseDiv.style.borderColor = "Purple";
+        } else if (attribute.startsWith("Activity Course")) {
+            courseDiv.style.borderColor = "Yellow";
+        } else if (attribute.startsWith("General Education")) {
+            courseDiv.style.borderColor = "Green";
+        } else if (attribute.startsWith("Lab Science")) {
+            courseDiv.style.borderColor = "Red";
+        }
+    }
+    return courseDiv;
+}
+
 
 /**
  * This appends a new year divider and year element to the body.
@@ -78,7 +165,8 @@ async function removeYear() {
 
 async function addClass() {
     console.log("addClass()");
-    const module  = await import("/class.json", { with: { type: "json" } });
+    const module  = await import("/json/class.json", { with: { type: "json" } });
+    console.log(module);
     const classDiv = document.createElement("div");
     classDiv.id = `c10`
     classDiv.className = "class";

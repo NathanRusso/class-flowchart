@@ -1,0 +1,12 @@
+{
+    "id": 2,
+    "credits": null,
+    "co-op": true,
+    "discipline": "CSCI",
+    "number": 488,
+    "name": "Summer Co-op",
+    "description": "This is a summer co-op",
+    "notes": "",
+    "attributes": [],
+    "prerequisites": []
+}
