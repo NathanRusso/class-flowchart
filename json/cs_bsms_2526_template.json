@@ -60,7 +60,7 @@
       { "set_course": false, "co-op": false, "attribute": "CS Undergraduate Elective" },
       { "set_course": true, "co-op": false, "discipline": "CSCI", "number": 344, "name": "Programming Language Concepts" },
       { "set_course": false, "co-op": false, "attribute": "" },
-      { "set_course": false, "co-op": false, "attribute": "Gen Ed Immersion" }
+      { "set_course": false, "co-op": false, "attribute": "Gen Ed: Immersion" }
     ],
     [
       { "set_course": true, "co-op": false, "discipline": "CSCI", "number": 664, "name": "Computational Complexity" },
@@ -77,8 +77,8 @@
     ],
     [
       { "set_course": false, "co-op": false, "attribute": "CS Graduate Cluster Elective" },
-      { "set_course": false, "co-op": false, "attribute": "Gen Ed Immersion" },
-      { "set_course": false, "co-op": false, "attribute": "Gen Ed Immersion" },
+      { "set_course": false, "co-op": false, "attribute": "Gen Ed: Immersion" },
+      { "set_course": false, "co-op": false, "attribute": "Gen Ed: Elective" },
       { "set_course": false, "co-op": false, "attribute": "" },
       { "set_course": false, "co-op": false, "attribute": "" }
     ],
