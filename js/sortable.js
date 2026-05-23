@@ -20,6 +20,15 @@ const semesters = ["Fall", "Spring", "Summer"];
 
 const body = document.body;
 let academicYearCount = 0; // The numbers of years of school currently being listed.
+let transferSection = false;
+
+const showTransferButton = document.getElementById(`showTransferButton`);
+const hideTransferButton = document.getElementById(`hideTransferButton`);
+const transferDividerDiv = document.getElementById(`year-divider-1`);
+const transferYearDiv = document.getElementById(`year-0`);
+const transferDiv = document.getElementById(`transfer`);
+makeSortable(transferDiv);
+
 
 /**
  * This makes the given div element sortable.
@@ -206,6 +215,30 @@ function popYear() {
     if (academicYearCount > 1) document.getElementById(`year-divider-${academicYearCount}`).remove();
     document.getElementById(`year-${academicYearCount}`).remove();
     academicYearCount--;
+}
+
+/**
+ * This shows the Transfer Class section and shows the remove transfer button.
+ */
+function showTransferSection() {
+    if (transferSection) return;
+    transferDividerDiv.style.display = 'revert';
+    transferYearDiv.style.display = 'flex';
+    transferSection = true;
+    showTransferButton.style.display = 'none';
+    hideTransferButton.style.display = 'inline-block';
+}
+
+/**
+ * This hides the Transfer Class section and shows the add transfer button.
+ */
+function hideTransferSection() {
+    if (!transferSection) return;
+    transferDividerDiv.style.display = 'none';
+    transferYearDiv.style.display = 'none';
+    transferSection = false;
+    showTransferButton.style.display = 'inline-block';
+    hideTransferButton.style.display = 'none';
 }
 
 async function addClass() {
