@@ -8,7 +8,10 @@ course_types = [
 
 const body = document.body;
 let currentAcademicYear = 1; // The numbers of years of school currently being listed.
-const semesters = ["fall", "spring", "summer"];
+const years = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", 
+        "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth"];
+const semesters = ["Fall", "Spring", "Summer"];
+
 
 /*const fall_1 = document.getElementById(`fall-${currentAcademicYear}`);
 const spring_1 = document.getElementById(`spring-${currentAcademicYear}`);
@@ -42,7 +45,7 @@ function makeSortable(element) {
 }
 
 async function uploadTemplate() {
-    const template  = (await import("/json/template.json", { with: { type: "json" } })).default;
+    const template  = (await import("/json/cs_bsms_2526_template.json", { with: { type: "json" } })).default;
     console.log(template);
     template.forEach((yearInfo, index) => createYear(yearInfo, index + 1));
 }
@@ -58,10 +61,23 @@ function createYear(yearInfo, academicYearCount) {
     }
 
     const yearDiv = document.createElement("div");
-    yearDiv.id = `year-${academicYearCount}`
+    yearDiv.id = `year-${academicYearCount}`;
+    yearDiv.className = "year";
+
+    const yearTextDiv = document.createElement("div");
+    yearTextDiv.id = `year-text-${academicYearCount}`
+    yearTextDiv.className = "year-text";
+    yearTextDiv.textContent = `${years[academicYearCount - 1]} Year` || "";
+    yearDiv.appendChild(yearTextDiv);
+
+    const yearBlockDiv = document.createElement("div");
+    yearBlockDiv.id = `year-block-${academicYearCount}`
+    yearBlockDiv.className = "year-block";
+    yearDiv.appendChild(yearBlockDiv);
+
     yearInfo.forEach((semesterInfo, index) => {
         const semesterDiv = createSemester(semesterInfo, academicYearCount, semesters[index])
-        yearDiv.appendChild(semesterDiv);
+        yearBlockDiv.appendChild(semesterDiv);
     });
     body.appendChild(yearDiv);
 }
@@ -92,6 +108,7 @@ function createCourse(courseInfo) {
         courseDiv.textContent = `${courseInfo.discipline}-${courseInfo.number}\n\n${courseInfo.name}`
         switch (courseInfo.discipline) {
             case "CSCI":
+            case "SWEN":
                 courseDiv.style.borderColor = "Orange";
                 break;
             case "MATH":
@@ -103,21 +120,29 @@ function createCourse(courseInfo) {
         }
     } else {
         courseDiv.className = "class";
-        courseDiv.textContent = `${courseInfo.attribute}`
+        courseDiv.textContent = `${courseInfo.attribute}\n\n________`
         const attribute = courseInfo.attribute;
         if (attribute == null || attribute == "") {
+            courseDiv.textContent = `Open Elective`
             courseDiv.style.borderColor = "Purple";
         } else if (attribute.startsWith("Activity Course")) {
             courseDiv.style.borderColor = "Yellow";
-        } else if (attribute.startsWith("General Education")) {
+        } else if (attribute.startsWith("CS")) {
+            courseDiv.style.borderColor = "Orange";
+        } else if (attribute.startsWith("Gen")) {
             courseDiv.style.borderColor = "Green";
         } else if (attribute.startsWith("Lab Science")) {
             courseDiv.style.borderColor = "Red";
+        } else if (attribute.startsWith("Writing Intensive")) {
+            courseDiv.style.borderColor = "Green";
         }
     }
     return courseDiv;
 }
 
+function downloadTemplate() {
+
+}
 
 /**
  * This appends a new year divider and year element to the body.

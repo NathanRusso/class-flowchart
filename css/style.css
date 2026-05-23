@@ -12,12 +12,34 @@
     margin-bottom: 5px;
 }
 
+.year {
+    display: flex;
+}
+
+.year-text {
+    /*border: 1px solid rgb(59, 28, 171);*/
+    font-weight: bold;
+    width: 5%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.year-block {
+    /*border: 1px solid rgb(176, 23, 23);*/
+    width: 90%;
+}
+
 .semester {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border: 1px solid black;
-    width: 90%;
+    /*border: 1px solid yellow;*/
+    /*width: 90%;*/
+    width: 100%;
     min-height: 5px;
     /*height: 100px;*/
     margin-top: 5px;
@@ -29,8 +51,12 @@
 .class {
     border: 5px solid;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     white-space: pre-wrap;
+    font-size: 90%;
     width: 100px;
     height: 100px;
 }
