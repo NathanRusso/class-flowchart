@@ -64,6 +64,7 @@ function makeSortable(element) {
 async function uploadTemplate() {
     clearFlowchart();
     const template  = (await import("/json/cs_bsms_2526_template.json", { with: { type: "json" } })).default;
+    // const template  = (await import("/json/cs_bs_2526_template.json", { with: { type: "json" } })).default;
 
     // This handles all transfer classes
     fillTransferYear(template[0]);
