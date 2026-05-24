@@ -28,18 +28,22 @@ const classRegex = /^[A-Z]{4}-[0-9]{1,3}$/;
 
 const fileInput = document.getElementById("fileInput");
 const templateSelect = document.getElementById("templateSelect");
-const uploadTemplateButton = document.getElementById(`uploadTemplateButton`);
-const downloadTemplateButton = document.getElementById(`downloadTemplateButton`);
-const pushYearButton = document.getElementById(`pushYearButton`);
-const popYearButton = document.getElementById(`popYearButton`);
-const showTransferButton = document.getElementById(`showTransferButton`);
-const hideTransferButton = document.getElementById(`hideTransferButton`);
-const clearFlowchartButton = document.getElementById(`clearFlowchartButton`);
+const uploadTemplateButton = document.getElementById("uploadTemplateButton");
+const downloadTemplateButton = document.getElementById("downloadTemplateButton");
+const pushYearButton = document.getElementById("pushYearButton");
+const popYearButton = document.getElementById("popYearButton");
+const showTransferButton = document.getElementById("showTransferButton");
+const hideTransferButton = document.getElementById("hideTransferButton");
+const clearFlowchartButton = document.getElementById("clearFlowchartButton");
 
-const transferDividerDiv = document.getElementById(`year-divider-1`);
-const transferYearDiv = document.getElementById(`year-0`);
-const transferDiv = document.getElementById(`transfer`);
+const flowchartBody = document.getElementById("flowchartBody");
+const transferDividerDiv = document.getElementById("year-divider-1");
+const transferYearDiv = document.getElementById("year-0");
+const transferDiv = document.getElementById("transfer");
 makeSortable(transferDiv);
+
+const finalNotesTitle = document.getElementById("finalNotesTitle");
+const finalNotesDescription = document.getElementById("finalNotesDescription");
 
 //------------------------------ EVENT LISTENERS BELOW ------------------------------//
 
@@ -146,7 +150,7 @@ function createYear(yearInfo) {
         const yearDividerDiv = document.createElement("div");
         yearDividerDiv.id = `year-divider-${academicYearCount}`
         yearDividerDiv.className = "year-divider";
-        body.appendChild(yearDividerDiv);
+        flowchartBody.appendChild(yearDividerDiv);
     }
 
     const yearDiv = document.createElement("div");
@@ -168,7 +172,7 @@ function createYear(yearInfo) {
         const semesterDiv = createSemester(yearInfo[index], term)
         yearBlockDiv.appendChild(semesterDiv);
     });
-    body.appendChild(yearDiv);
+    flowchartBody.appendChild(yearDiv);
 }
 
 /**
@@ -388,7 +392,7 @@ function pushYear() {
         const yearDividerDiv = document.createElement("div");
         yearDividerDiv.id = `year-divider-${academicYearCount}`
         yearDividerDiv.className = "year-divider";
-        body.appendChild(yearDividerDiv);
+        flowchartBody.appendChild(yearDividerDiv);
     }
 
     const yearDiv = document.createElement("div");
@@ -413,7 +417,7 @@ function pushYear() {
         makeSortable(semesterDiv);
         yearBlockDiv.appendChild(semesterDiv);
     });
-    body.appendChild(yearDiv);
+    flowchartBody.appendChild(yearDiv);
 }
 
 /**
