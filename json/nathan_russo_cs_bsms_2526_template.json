@@ -63,22 +63,22 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "PSCY",
+                    "number": 101,
                     "attribute": "Gen Ed: Science Principle Perspective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "VISL",
+                    "number": 140,
                     "attribute": "Gen Ed: Artistic Perspective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "ECON",
+                    "number": 101,
                     "attribute": "Gen Ed: Global Perspective"
                 },
                 {
@@ -107,36 +107,36 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CHMG",
+                    "number": 141,
                     "attribute": "Lab Science: Lecture 1"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CHMG",
+                    "number": 145,
                     "attribute": "Lab Science: Lab 1"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "STSO",
+                    "number": 120,
                     "attribute": "Gen Ed: Ethical Perspective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "SOIS",
+                    "number": 244,
                     "attribute": "Gen Ed: Social Perspective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "WREC",
+                    "number": 37,
                     "attribute": "Activity Course"
                 }
             ],
@@ -176,22 +176,22 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CHMG",
+                    "number": 142,
                     "attribute": "Lab Science: Lecture 2"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CHMG",
+                    "number": 146,
                     "attribute": "Lab Science: Lab 2"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "STSO",
+                    "number": 140,
                     "attribute": "Gen Ed: Elective"
                 },
                 {
@@ -199,7 +199,7 @@
                     "co-op": false,
                     "discipline": "CSCI",
                     "number": 99,
-                    "name": "Co"
+                    "name": "Co-op Seminar"
                 }
             ],
             [
@@ -220,29 +220,29 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "MATH",
+                    "number": 367,
                     "attribute": "Gen Ed: Immersion"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "FINC",
+                    "number": 120,
                     "attribute": ""
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "ACCT",
+                    "number": 110,
                     "attribute": ""
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "WREC",
+                    "number": 73,
                     "attribute": "Activity Course"
                 }
             ],
@@ -282,15 +282,15 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "FINC",
+                    "number": 220,
                     "attribute": ""
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "MATH",
+                    "number": 351,
                     "attribute": "Gen Ed: Immersion"
                 }
             ],
@@ -305,8 +305,8 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CSCI",
+                    "number": 462,
                     "attribute": "CS Undergraduate Elective"
                 },
                 {
@@ -319,8 +319,8 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "MGIS",
+                    "number": 130,
                     "attribute": ""
                 },
                 {
@@ -347,29 +347,29 @@
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CSCI",
+                    "number": 651,
                     "attribute": "CS Graduate Elective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CSCI",
+                    "number": 631,
                     "attribute": "CS Graduate Cluster Elective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "CSCI",
+                    "number": 635,
                     "attribute": "CS Graduate Cluster Elective"
                 },
                 {
                     "set_course": false,
                     "co-op": false,
-                    "discipline": "",
-                    "number": null,
+                    "discipline": "MATH",
+                    "number": 301,
                     "attribute": ""
                 }
             ],
@@ -431,6 +431,5 @@
             [],
             []
         ]
-    ],
-    "notes": []
+    ]
 }

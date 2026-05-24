@@ -333,13 +333,14 @@ function processCourse(courseDiv) {
             "name": classInformation1[0].trim()
         };
     } else if (classContent.includes("-")) {
-        const classInformation = classContent.split(/[\-\n]+/);
+        const classInformation1 = classContent.split(/[\n]+/);
+        const classInformation2 = classInformation1[0].split(/[\-]+/);
         course = {
             "set_course": true,
             "co-op": false,
-            "discipline": classInformation[0].trim(),
-            "number": parseInt(classInformation[1].trim()),
-            "name": classInformation[2].trim()
+            "discipline": classInformation2[0].trim(),
+            "number": parseInt(classInformation2[1].trim()),
+            "name": classInformation1[1].trim()
         };
     } else {
         const attribute = courseDiv.children[0].textContent;        // Label
