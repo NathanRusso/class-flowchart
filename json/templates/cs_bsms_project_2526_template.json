@@ -294,11 +294,11 @@
       ],
       [
         {
-          "set_course": true,
+          "set_course": false,
           "co-op": false,
           "discipline": "CSCI",
           "number": 664,
-          "name": "* ++ Computational Complexity"
+          "attribute": "* ++ CS Graduate Elective / Required Course"
         },
         {
           "set_course": false,

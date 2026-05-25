@@ -22,5 +22,17 @@
         "notes": "",
         "attributes": [],
         "prerequisites": []
+    },
+    {
+        "id": 3,
+        "credits": null,
+        "co-op": true,
+        "discipline": "CSCI",
+        "number": 499,
+        "name": "Semester Co-op",
+        "description": "This is a semester co-op",
+        "notes": "",
+        "attributes": [],
+        "prerequisites": []
     }
 ]

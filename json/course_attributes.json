@@ -28,10 +28,10 @@
     { "id": 27, "name": "NTID Scientific Processes" },
     { "id": 28, "name": "NTID Sign Language Processes" },
     { "id": 29, "name": "NTID Supported Students Only" },
-    { "id": 30, "name": "SMTL: Science/Math Literacy" },
-    { "id": 31, "name": "SMTL: Technological Literacy" },
-    { "id": 32, "name": "Writing Intensive: First Year" },
-    { "id": 33, "name": "Writing Intensive: Gen Ed" },
-    { "id": 34, "name": "Writing Intensive: Program" },
-    { "id": 35, "name": "Open Elective" }
+    { "id": 30, "name": "Open Elective" },
+    { "id": 31, "name": "SMTL: Science/Math Literacy" },
+    { "id": 32, "name": "SMTL: Technological Literacy" },
+    { "id": 33, "name": "Writing Intensive: First Year" },
+    { "id": 34, "name": "Writing Intensive: Gen Ed" },
+    { "id": 35, "name": "Writing Intensive: Program" }
 ]
