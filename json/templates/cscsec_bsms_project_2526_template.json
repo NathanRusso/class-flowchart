@@ -268,7 +268,7 @@
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "CS Undergraduate Elective"
+          "attribute": "CS Elective"
         },
         {
           "set_course": true,
@@ -280,8 +280,8 @@
         {
           "set_course": false,
           "co-op": false,
-          "discipline": "",
-          "number": null,
+          "discipline": "CSEC",
+          "number": 600,
           "attribute": "Open Elective"
         },
         {
@@ -294,25 +294,25 @@
       ],
       [
         {
-          "set_course": true,
+          "set_course": false,
           "co-op": false,
-          "discipline": "CSCI",
-          "number": 664,
-          "name": "* ++ Computational Complexity"
+          "discipline": "",
+          "number": null,
+          "attribute": "** CS Elective"
         },
         {
           "set_course": false,
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "* CS Graduate Cluster Elective"
+          "attribute": "** CS Cluster Elective"
         },
         {
           "set_course": false,
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "Open Elective"
+          "attribute": "* Open Elective / CSEC Graduate Advanced Elective"
         },
         {
           "set_course": false,
@@ -347,7 +347,7 @@
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "* CS Graduate Cluster Elective"
+          "attribute": "** CS Cluster Elective"
         },
         {
           "set_course": false,
@@ -368,14 +368,14 @@
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "Open Elective"
+          "attribute": "* Open Elective / CSEC Graduate Advanced Elective"
         },
         {
           "set_course": false,
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "Open Elective"
+          "attribute": "* Open Elective / CSEC Graduate Advanced Elective"
         }
       ],
       []
@@ -387,28 +387,28 @@
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "CS Graduate Cluster Elective"
+          "attribute": "CSEC Graduate Research Elective"
+        },
+        {
+          "set_course": true,
+          "co-op": false,
+          "discipline": "CSEC",
+          "number": 604,
+          "name": "Cryptography and Authentication"
+        },
+        {
+          "set_course": true,
+          "co-op": false,
+          "discipline": "CSEC",
+          "number": 603,
+          "name": "Enterprise Security"
         },
         {
           "set_course": false,
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "CS Graduate Elective"
-        },
-        {
-          "set_course": false,
-          "co-op": false,
-          "discipline": "",
-          "number": null,
-          "attribute": "CS Graduate Elective"
-        },
-        {
-          "set_course": false,
-          "co-op": false,
-          "discipline": "",
-          "number": null,
-          "attribute": "CS Graduate Elective"
+          "attribute": "CSEC Graduate Advanced Elective"
         }
       ],
       [
@@ -417,21 +417,21 @@
           "co-op": false,
           "discipline": "",
           "number": null,
-          "attribute": "CS Graduate Elective"
+          "attribute": "CSEC Graduate Research Elective"
         },
         {
-          "set_course": false,
+          "set_course": true,
           "co-op": false,
-          "discipline": "",
-          "number": null,
-          "attribute": "CS Graduate Elective"
+          "discipline": "CSEC",
+          "number": 742,
+          "name": "Computer System Security"
         },
         {
           "set_course": true,
           "co-op": false,
           "discipline": "CSCI",
-          "number": 788,
-          "name": "CS Graduate Capstone"
+          "number": 792,
+          "name": "CSEC Graduate Project"
         }
       ],
       []
@@ -439,11 +439,12 @@
   ],
   "notes": [
     "<s><b>Prerequisites:</b> Shown in parenthesis under course name</s>",
-    "<b>Writing Intensive Courses:</b> 3 are required: 1st year = URWT 150/ISTE 110 + 1 Gen Ed course + program specific (CSCI-472 Historical & Current Perspectives in Computer Science)",
+    "<b>Writing Intensive Courses:</b> 3 are required: 1st year = URWT 150/ISTE 110 + 1 Gen Ed course + program specific (CSCI 472 Historical & Current Perspectives in Computer Science)",
     "<b>Lab Sciences:</b> Only specific sequences are allowed in Biology, Chemistry or Physics; please see the CS handbook",
-    "<b>Perspectives:</b> Lab Science 1 fulfills the required Natural Science Inquiry Perspective; the Calculus sequence fulfills the required Mathematical",
-    "<b>BS/MS Double-Counted Courses:</b> are noted with an *",
-    "++ <b>Approved alternative courses to the required CSCI-664 are</b>: CSCI-667, CSCI-712, CSCI-716 and CSCI-761.  Check SIS for offerings. ",
-    "<b><u>This flowchart illustrates the MS degree culminating with the Capstone project; contact an academic advisor for details on the thesis option.</u></b>"
+    "<b><u>Please see the Cybersecurity MS Handbook or talk to an academic advisor for a complete list of approved Cybersecurity Graduate Electives</u></b>",
+    "<b>* CS/CSEC BS/MS Double-Counted Courses</b> (however see ** also)",
+    "<b>** If approved CSEC Grad. Adv. Elec. that are Comp. Sci. (CSCI) courses are selected as double-counts, the BS double-count can satisfy CS Elective requirements instead of Open Electives<b>",
+    "<b>CSEC 604 is a required MS course; however, students who have completed the related course CSCI 662 Foundations of Cryptography or undergraduate CSCI 462 Introduction to Cryptography replace CSEC 604 with an additional CSEC Graduate Advanced Elective<b>",
+    "<b><u>This flowchart illustrates the 3-credit MS capstone experience; see the Cybersecurity MS Handbook or talk to an academic advisor for details on the 6-credit thesis option</u></b>"
   ]
 }

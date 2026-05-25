@@ -223,6 +223,7 @@ function createCourse(courseInfo) {
         courseDiv.className = "class";
         courseDiv.textContent = `${courseInfo.discipline}-${courseInfo.number}\n\n${courseInfo.name}`
         switch (courseInfo.discipline) {
+            case "CSEC":
             case "CSCI":
             case "SWEN":
                 courseDiv.style.borderColor = "Orange";
@@ -286,7 +287,7 @@ function createCourse(courseInfo) {
             courseDiv.style.borderColor = "Purple";
         } else if (attribute.includes("Activity Course")) {
             courseDiv.style.borderColor = "Yellow";
-        } else if (attribute.includes("CS") || attribute.includes("SE")) {
+        } else if (attribute.includes("CS") || attribute.includes("SE") || attribute.includes("CSEC")) {
             courseDiv.style.borderColor = "Orange";
         } else if (attribute.includes("Gen Ed") || attribute.includes("Writing Intensive")) {
             courseDiv.style.borderColor = "Green";
