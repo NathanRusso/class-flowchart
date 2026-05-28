@@ -101,10 +101,10 @@ async function getTemplateFlowchart(filename) {
  * @param {*} file - the given flowchart file object
  */
 async function processUploadedFile(file) {
-    const filename = file.name;
+    uploadedFilename = file.name;
     const fileText = await file.text();
     const fileData = JSON.parse(fileText);
-    processFlowchart(filename, fileData, true, false);
+    processFlowchart(uploadedFilename, fileData, true, false);
     fileInput.value = ""; // Makes sure the same file can be uploaded in a row
 }
 
@@ -422,9 +422,9 @@ function downloadTemplate() {
     const jsonObjectUrl = URL.createObjectURL(jsonBlob);
     const selectValue = templateSelect.value;
     let jsonFilename;
-    if (selectValue != null && selectValue != "") {
+    if (selectValue) {
         jsonFilename = templateSelect.value;
-    } else if (uploadedFilename != null && uploadedFilename != "") {
+    } else if (uploadedFilename) {
         jsonFilename = uploadedFilename;
     } else {
         jsonFilename = "template.json";

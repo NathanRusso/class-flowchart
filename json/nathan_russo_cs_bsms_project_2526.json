@@ -326,16 +326,16 @@
                     "courseType": "input",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "FINC",
-                    "number": 120,
+                    "discipline": "ACCT",
+                    "number": 110,
                     "attribute": "Open Elective"
                 },
                 {
                     "courseType": "input",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "ACCT",
-                    "number": 110,
+                    "discipline": "FINC",
+                    "number": 120,
                     "attribute": "Open Elective"
                 },
                 {
@@ -388,17 +388,17 @@
                     "courseType": "input",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "FINC",
-                    "number": 220,
-                    "attribute": "Open Elective"
+                    "discipline": "MATH",
+                    "number": 351,
+                    "attribute": "Gen Ed: Immersion"
                 },
                 {
                     "courseType": "input",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "MATH",
-                    "number": 351,
-                    "attribute": "Gen Ed: Immersion"
+                    "discipline": "FINC",
+                    "number": 220,
+                    "attribute": "Open Elective"
                 }
             ],
             [
@@ -427,20 +427,20 @@
                     "name": "Programming Language Concepts"
                 },
                 {
-                    "courseType": "input",
-                    "offeredFall": true,
-                    "offeredSpring": true,
-                    "discipline": "MGIS",
-                    "number": 130,
-                    "attribute": "Open Elective"
-                },
-                {
                     "courseType": "required",
                     "offeredFall": true,
                     "offeredSpring": true,
                     "discipline": "CSCI",
                     "number": 472,
                     "name": "Historical & Current Perspectives in CS"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "MGIS",
+                    "number": 130,
+                    "attribute": "Open Elective"
                 }
             ],
             [
