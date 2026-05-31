@@ -221,6 +221,7 @@
                     "number": 320,
                     "name": "Game Design & Development II"
                 },
+
                 {
                     "courseType": "input",
                     "offeredFall": true,
@@ -261,7 +262,7 @@
                     "offeredSpring": true,
                     "discipline": "",
                     "number": null,
-                    "attribute": "IGM/GDD Advanced Elective"
+                    "attribute": "IGM/GDD Undergraduate Advanced Elective"
                 },
                 {
                     "courseType": "input",
@@ -302,12 +303,20 @@
         [
             [
                 {
-                    "courseType": "input",
+                    "courseType": "required",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "",
-                    "number": null,
-                    "attribute": "IGM/GDD Advanced Elective"
+                    "discipline": "IGME",
+                    "number": 601,
+                    "name": "Game Development Processes"
+                },
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 695,
+                    "name": "Colloquium in Game Design and Development"
                 },
                 {
                     "courseType": "input",
@@ -344,12 +353,20 @@
             ],
             [
                 {
-                    "courseType": "input",
+                    "courseType": "required",
                     "offeredFall": true,
                     "offeredSpring": true,
-                    "discipline": "",
-                    "number": null,
-                    "attribute": "IGM/GDD Advanced Elective"
+                    "discipline": "IGME",
+                    "number": 602,
+                    "name": "Game Design"
+                },
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 795,
+                    "name": "Game Industry Themes and Perspectives"
                 },
                 {
                     "courseType": "input",
@@ -382,6 +399,93 @@
                     "discipline": "",
                     "number": null,
                     "attribute": "Open Elective"
+                }
+            ],
+            []
+        ],
+        [
+            [
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 788,
+                    "name": "Capstone Design"
+                },
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 603,
+                    "name": "Gameplay and Prototyping"
+                },
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 695,
+                    "name": "Colloquium in Game Design and Development"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "",
+                    "number": null,
+                    "attribute": "IGM Graduate Elective"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "",
+                    "number": null,
+                    "attribute": "IGM Graduate Elective"
+                }
+            ],
+            [
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 789,
+                    "name": "Capstone Development"
+                },
+                {
+                    "courseType": "required",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "IGME",
+                    "number": 603,
+                    "name": "Gameplay and Prototyping"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "",
+                    "number": null,
+                    "attribute": "IGM Graduate Elective"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "",
+                    "number": null,
+                    "attribute": "IGM Graduate Elective"
+                },
+                {
+                    "courseType": "input",
+                    "offeredFall": true,
+                    "offeredSpring": true,
+                    "discipline": "",
+                    "number": null,
+                    "attribute": "GDD Graduate Research Elective"
                 }
             ],
             []
