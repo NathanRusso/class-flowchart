@@ -89,7 +89,7 @@ function makeSortable(element) {
  * @param {*} filename - the template flowchart filename
  */
 async function getTemplateFlowchart(filename) {
-    if (filename == null || filename == "") { setPageTitle(null); return; };
+    if (!filename) { setPageTitle(null); return; };
     const template  = (await import(`/json/templates/${filename}`, { with: { type: "json" } })).default;
     processFlowchart(filename, template, false, true);
 }
@@ -695,22 +695,64 @@ function getAttributeColor(attribute) {
  */
 function setPageTitle(filename) {
     switch (filename) {
-        case "cs_bs_2526_template.json":
-            pageTitle.textContent = "Computer Science BS 2025-2026 Flowchart"
+        case "ai_bs_2526_template.json":
+            pageTitle.textContent = "Artificial Intelligence BS 2025-2026 Flowchart";
             break;
-        case "csec_bs_2526_template.json":
-            pageTitle.textContent = "Cyber Security BS 2025-2026 Flowchart"
+        case "ce_bs_2526_template.json":
+            pageTitle.textContent = "Computing Exploration BS 2025-2026 Flowchart";
+            break;
+        case "cs_bs_2526_template.json":
+            pageTitle.textContent = "Computer Science BS 2025-2026 Flowchart";
             break;
         case "cs_bsms_project_2526_template.json":
         case "cs_bsms_thesis_2526_template.json":
-            pageTitle.textContent = "Computer Science BS/MS 2025-2026 Flowchart"
-            break
+            pageTitle.textContent = "Computer Science BS/MS 2025-2026 Flowchart";
+            break;
         case "cscsec_bsms_project_2526_template.json":
         case "cscsec_bsms_thesis_2526_template.json":
-            pageTitle.textContent = "Computer Science/Cyber Security BS/MS 2025-2026 Flowchart"
+            pageTitle.textContent = "Computer Science/Cyber Security BS/MS 2025-2026 Flowchart";
             break;
         case "csse_bsms_2526_template.json":
-            pageTitle.textContent = "Computer Science/Software Engineering BS/MS 2025-2026 Flowchart"
+            pageTitle.textContent = "Computer Science/Software Engineering BS/MS 2025-2026 Flowchart";
+            break;
+        case "csec_bs_2526_template.json":
+            pageTitle.textContent = "Cyber Security BS 2025-2026 Flowchart";
+            break;
+        case "csec_bsms_2526_template.json":
+            pageTitle.textContent = "Cyber Security BS/MS 2025-2026 Flowchart";
+            break;
+        case "csecstpp_bsms_2526_template.json":
+            pageTitle.textContent = "Cyber Security/Science, Technology, and Public Policy BS/MS 2025-2026 Flowchart";
+            break;
+        case "gdd_bs_2526_template.json":
+            pageTitle.textContent = "Game Design and Development BS 2025-2026 Flowchart";
+            break;
+        case "gdd_bsms_2526_template.json":
+            pageTitle.textContent = "Game Design and Development BS/MS 2025-2026 Flowchart";
+            break;
+        case "hcd_bs_2526_template.json":
+            pageTitle.textContent = "Humanities, Computing, and Design BS 2025-2026 Flowchart";
+            break;
+        case "hcc_bs_2526_template.json":
+            pageTitle.textContent = "Human-Centered Computing BS 2025-2026 Flowchart";
+            break;
+        case "it_bs_2526_template.json":
+            pageTitle.textContent = "Information Technology BS 2025-2026 Flowchart";
+            break;
+        case "nmid_bs_2526_template.json":
+            pageTitle.textContent = "New Media Interactive Development BS 2025-2026 Flowchart";
+            break;
+        case "se_bs_2526_template.json":
+            pageTitle.textContent = "Software Engineering BS 2025-2026 Flowchart";
+            break;
+        case "se_bsms_2526_template.json":
+            pageTitle.textContent = "Software Engineering BS/MS 2025-2026 Flowchart";
+            break;
+        case "secs_bsms_2526_template.json":
+            pageTitle.textContent = "Software Engineering/Computer Science BS/MS 2025-2026 Flowchart";
+            break;
+        case "secsec_bsms__2526_template.json":
+            pageTitle.textContent = "Software Engineering/Cyber Security BS/MS 2025-2026 Flowchart";
             break;
         default:
             pageTitle.textContent = "Computer Science 2025-2026 Flowchart";
